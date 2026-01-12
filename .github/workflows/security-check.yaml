@@ -1,4 +1,4 @@
-name: Security Scan CI/CD
+name: "Security Scan CI/CD"
 
 on:
   push:
@@ -8,11 +8,10 @@ on:
 jobs:
   security-scan:
     runs-on: self-hosted
-
-  steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
-    - name: Run Snyk Code Analysis
-      uses: snyk/actions/node@master
-      with:
-        command: test
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Run Snyk Code Analysis
+        uses: snyk/actions/node@master
+        with:
+          command: test
