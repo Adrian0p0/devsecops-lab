@@ -1,0 +1,43 @@
+{
+  "name": "frontend",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/vite": "^4.1.12",
+    "@vueuse/core": "^13.7.0",
+    "@vueuse/integrations": "^13.7.0",
+    "axios": "^1.11.0",
+    "pinia": "^3.0.3",
+    "typescript": "^5.9.2",
+    "universal-cookie": "^7.2.2",
+    "vue": "^3.5.18",
+    "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "@mdi/font": "^7.4.47",
+    "@tsconfig/node20": "^20.1.6",
+    "@tsconfig/node22": "^22.0.2",
+    "@vitejs/plugin-vue": "^6.0.1",
+    "@vue/tsconfig": "^0.8.1",
+    "accessibility": "^6.1.0",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "sass": "^1.90.0",
+    "tailwindcss": "^3.4.17",
+    "vite": "^7.0.6",
+    "vite-plugin-vue-devtools": "^8.0.0",
+    "vite-plugin-vuetify": "^2.1.2",
+    "vue-signature-pad": "^3.0.2",
+    "vuetify": "^3.9.5"
+  }
+}
