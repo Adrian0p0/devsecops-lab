@@ -19,7 +19,7 @@ jobs:
 
   gitleaks:
     name: Scan fo Secrets
-    runs-on: ubuntu-latest
+    runs-on: self-host
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -39,3 +39,11 @@ jobs:
         uses: ossf/scorecard-action@v2.3.1
         with:
           results_file: results.json
+
+permissions:
+  contents: read
+  actions: read
+  checks: read
+  pull-requests: read
+  issues: read
+  security-events: write
