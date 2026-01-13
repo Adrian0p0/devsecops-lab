@@ -1,0 +1,23 @@
+name: Access Enforcer
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  enforce-access:
+    runs-on: self-hosted
+    steps:
+      - name: Validate GitHub Branch Protection
+        uses: ossf/scorecard-action@v2.3.1
+        with:
+          results_file: results.json
+
+permissions:
+  contents: read
+  actions: read
+  checks: read
+  pull-requests: read
+  issues: read
+  security-events: write
