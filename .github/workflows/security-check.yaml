@@ -19,7 +19,7 @@ jobs:
 
   gitleaks:
     name: Scan fo Secrets
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -36,6 +36,6 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: Validate GitHub Branch Protection
-        uses: ossf/scorecard-action
+        uses: ossf/scorecard-action@v2
         with:
           results_file: results.json
